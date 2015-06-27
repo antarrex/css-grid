@@ -1,0 +1,53 @@
+/*
+ * A simple, responsive css grid
+ * https://github.com/maxim-larkin/css-grid
+ */
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.container + .container {
+	margin-top: 20px;
+}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+	/* helper class to hide unnecesarry elements on a small screen */
+	.hide-mob {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.container > [class^="col-"] {
+		float: left;
+		min-height: 1px;
+	}
+	.container > [class^="col-"] + [class^="col-"] { margin-left: 2%; }
+	.container > [class^="col-"]:last-child  { float: right }
+
+	/* columns are 65px wide, width 20px gutters */
+	.col-1  { width: 6.5%  }
+	.col-2  { width: 15%   }
+	.col-3  { width: 23.5% }
+	.col-4  { width: 32%   }
+	.col-5  { width: 40.5% }
+	.col-6  { width: 49%   }
+	.col-7  { width: 57.5% }
+	.col-8  { width: 66%   }
+	.col-9  { width: 74.5% }
+	.col-10 { width: 83%   }
+	.col-11 { width: 91.5% }
+	.col-12 { width: 100%  }
+}
+
+@media (min-width: 1200px) {
+	.container { max-width: 1100px; }
+}
