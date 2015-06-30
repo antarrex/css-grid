@@ -31,8 +31,7 @@
 		min-height: 1px;
 	}
 	.container > [class^="col-"] + [class^="col-"] { margin-left: 2%; }
-	.container > [class^="col-"]:last-child  { float: right }
-
+	
 	/* columns are 65px wide, width 20px gutters */
 	.col-1  { width: 6.5%  }
 	.col-2  { width: 15%   }
@@ -46,6 +45,30 @@
 	.col-10 { width: 83%   }
 	.col-11 { width: 91.5% }
 	.col-12 { width: 100%  }
+
+	.indent-1  { margin-left: 8.5%  }
+	.indent-2  { margin-left: 17%   }
+	.indent-3  { margin-left: 25.5% }
+	.indent-4  { margin-left: 34%   }
+	.indent-5  { margin-left: 42.5% }
+	.indent-6  { margin-left: 51%   }
+	.indent-7  { margin-left: 59.5% }
+	.indent-8  { margin-left: 68%   }
+	.indent-9  { margin-left: 76.5% }
+	.indent-10 { margin-left: 85%   }
+	.indent-11 { margin-left: 93.5% }
+	
+	.indent-1:not(:first-child)  { margin-left: 10.5% !important }
+	.indent-2:not(:first-child)  { margin-left: 19%   !important }
+	.indent-3:not(:first-child)  { margin-left: 27.5% !important }
+	.indent-4:not(:first-child)  { margin-left: 36%   !important }
+	.indent-5:not(:first-child)  { margin-left: 44.5% !important }
+	.indent-6:not(:first-child)  { margin-left: 53%   !important }
+	.indent-7:not(:first-child)  { margin-left: 61.5% !important }
+	.indent-8:not(:first-child)  { margin-left: 70%   !important }
+	.indent-9:not(:first-child)  { margin-left: 78.5% !important }
+	.indent-10:not(:first-child) { margin-left: 87%   !important }
+	.indent-11:not(:first-child) { margin-left: 95.5% !important }
 }
 
 @media (min-width: 1200px) {
